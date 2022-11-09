@@ -12,3 +12,18 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const NavUlEl = document.querySelector(".gallery");
+//const lastLiEl =  document.createElement("li");
+//const lastInLiImageEl = document.createElement("img");
+
+
+const lastInLiImageEl = images
+  .map(({ url, alt }) => `<li> <img src="${url}" alt="${alt}"></li >`)
+.join("");
+//const colorButton = document.createElement("button");
+//colorButton.style.backgroundColor = color;
+//colorButton.style.margin = "px";
+
+// colorButton.textContent = label;
+
+NavUlEl.insertAdjacentHTML('beforeend', lastInLiImageEl);
