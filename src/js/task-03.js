@@ -13,12 +13,13 @@ const images = [
   },
 ];
 const NavUlEl = document.querySelector(".gallery");
+//console.log(NavUlEl.innerHTML);
 const lastInLiImageEl = images
   .map(({ url, alt }) =>
   `<li class = "item"> <img class="imgformat" src="${url}" alt="${alt}" width="450" ></li >`)
   .join("");
 NavUlEl.insertAdjacentHTML('beforeend', lastInLiImageEl);
-
+//console.log(NavUlEl.innerHTML);
 NavUlEl.classList.add("list"); 
 //console.log(NavUlEl);
 const NavUlEll = document.querySelector(".gallery");
