@@ -10,3 +10,5 @@ const onWidgetElColor = (revent) => { colorSet = getRandomHexColor(); console.lo
 
 widgetEl.addEventListener('click', onWidgetElColor)
 
+const aEl = document.querySelector('a');
+aEl.removeEventListener('click', onWidgetElColor);  

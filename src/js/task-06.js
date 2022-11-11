@@ -1,6 +1,6 @@
 const inputEl = document.querySelector("#validation-input");
-const dataAllA = inputEl.attributes ;//getAttribute(DataTransfer);
-console.log(dataAllA);
+//const dataAllA = inputEl.attributes ;//getAttribute(DataTransfer);
+//console.log(dataAllA);
 const dataLength = inputEl.getAttribute('data-length') ;//getAttribute(DataTransfer);
 console.log(Number(dataLength));
 const onInputEl = (event) => {

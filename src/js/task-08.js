@@ -10,6 +10,7 @@ const onFormElSubmit = (event) => {
  console.log(`email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 };
- formEl.addEventListener('submit', onFormElSubmit);
-//if (event.currentTarget.value === "")  output.textContent = "Anonymous"; 
- //   else  output.textContent = event.currentTarget.value ;
+formEl.addEventListener('submit', onFormElSubmit);
+ 
+const aEl = document.querySelector('a');
+aEl.removeEventListener('click', onFormElSubmit);  
