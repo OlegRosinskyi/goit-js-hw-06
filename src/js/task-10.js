@@ -31,5 +31,5 @@ const onddataDestroyBtn = (event) => {
 
 dataDestroyBtnEl.addEventListener('click', onddataDestroyBtn);
 
-//const aEl = document.querySelector('a');
-//aEl.removeEventListener('click', onInputEl);  
+const aEl = document.querySelector('a');
+aEl.removeEventListener('click', onInputEl);  
