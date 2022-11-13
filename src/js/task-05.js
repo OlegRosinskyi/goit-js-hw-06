@@ -5,4 +5,4 @@ const onInput = (event) => {
     if (event.currentTarget.value === "")  output.textContent = "Anonymous"; 
     else  output.textContent = event.currentTarget.value ;
 };
-input.addEventListener('change', onInput)
+input.addEventListener('input', onInput)
