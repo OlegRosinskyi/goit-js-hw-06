@@ -20,7 +20,7 @@ const ondataCreateBtn = (event) => {
   for (let i = 0; i < numberElements; i += 1) { arrayElements[i] = `<div> Element:  ${i} </div>` }; 
  
   boxesEl.innerHTML = arrayElements;
-
+//boxesEl.append(arrayElements);
 };
 dataCreateBtnEl.addEventListener('click', ondataCreateBtn);
 

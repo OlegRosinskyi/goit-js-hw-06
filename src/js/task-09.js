@@ -1,4 +1,4 @@
-const widgetEl = document.querySelector('.widget');
+const changeColorEl = document.querySelector('.change-color');
 const colorEl = document.querySelector('.color');
 const bodyEl = document.querySelector('body');
 let colorSet = 0;
@@ -8,7 +8,7 @@ function getRandomHexColor() {
 
 const onWidgetElColor = (revent) => { colorSet = getRandomHexColor(); console.log(colorSet); bodyEl.style.background = colorSet; colorEl.textContent = colorSet; };
 
-widgetEl.addEventListener('click', onWidgetElColor)
+changeColorEl.addEventListener('click', onWidgetElColor)
 
 const aEl = document.querySelector('a');
 aEl.removeEventListener('click', onWidgetElColor);  
