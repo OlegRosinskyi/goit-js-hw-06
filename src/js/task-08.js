@@ -10,7 +10,7 @@ const onFormElSubmit = (event) => {
     return  alert("Please fill in all the fields!");
   } 
 
-  console.log(`email: ${email.value}, Password: ${password.value}`);
+ // console.log(`email: ${email.value}, Password: ${password.value}`);
   const formData = {
     email,
     password,
